@@ -8,7 +8,7 @@ const port = process.env.PORT || 4000
 
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
-app.use(express.static(path.resolve(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, './public')))
 
 app.use(cors({
     origin: "*",
