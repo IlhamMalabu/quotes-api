@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MOTIVATIONAL QUOTES API</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/ebf5f49d8c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="">
+    <nav class="sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-30">
+        <div class="flex justify-between ">
+            <div class="p-4 font-serif ">Motivational Quotes API</div>
+            <div class="p-4">
+                <a href=""><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </nav>
+    <section class="h-max bg-blue-100 p-4">
+        <div class="pt-48 text-center font-serif text-xl md:text-2xl lg:text-3xl">
+            <p>An API that generates motivational quotes :)</p>
+        </div>
+        <div class="pt-24">
+            <h2 class="font-sans font-bold lg:text-center md:text-center text-xl md:text-2xl lg:text-3xl">Live Demo</h2>
+            <div class="text-center pt-8 font-serif text-xl md:text-2xl lg:text-3xl">
+                <p>"<a id="quote">Hello, this is a test</a>"</p>
+                <p>-<a id="person">Ilham</a></p>
+            </div>
+        </div>
+        <div class="text-center pt-8">
+            <button class="bg-blue-400 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded-full"
+                onclick="getRandom()">New Quote</button>
+        </div>
+    </section>
+    <section class="bg-blue-100 p-4 pt-8">
+        <div class="pb-5">
+            <h2 class="font-bold lg:text-center md:text-center text-xl md:text-2xl lg:text-3xl">Documentation/API
+                Endpoints</h2>
+        </div>
+        <div class="md:text-xl lg:text-2xl">
+            <div class="flex flex-col items-center pb-5 md:flex-row lg:flex-row lg:px-48">
+                <button class="bg-blue-400 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded-full"><a class="
+                    hover:underline" target="_blank" href="google.com">
+                        GET/quotes
+                    </a></button>
+                <p class="font-normal pl-4"> Return all quotes</p>
+            </div>
+            <div class="flex flex-col items-center pb-5 md:flex-row lg:flex-row lg:px-48">
+                <button class="bg-blue-400 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded-full"><a class="
+                    hover:underline" target="_blank" href="google.com">
+                        GET/quotes/random
+                    </a></button>
+                <p class="font-normal pl-4"> Return a random quote</p>
+            </div>
+            <div class="flex flex-col items-center pb-5 md:flex-row lg:flex-row lg:px-48">
+                <button class="bg-blue-400 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded-full"><a class="
+                    hover:underline" target="_blank" href="google.com">
+                        GET/quotes/id/:id
+                    </a></button>
+                <p class="font-normal pl-4"> Return quote by ID</p>
+            </div>
+            <div class="flex flex-col items-center pb-5 md:flex-row lg:flex-row lg:px-48">
+                <button class="bg-blue-400 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded-full"><a class="
+                    hover:underline" target="_blank" href="google.com">
+                        GET/quotes/person/:person
+                    </a></button>
+                <p class="font-normal pl-4"> Return quotes by a person</p>
+            </div>
+            <div class="flex flex-col items-center pb-5 md:flex-row lg:flex-row lg:px-48">
+                <button class="bg-blue-400 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded-full"><a class="
+                    hover:underline" target="_blank" href="google.com">
+                        POST/quotes
+                    </a></button>
+                <p class="font-normal pl-4">Post new quote</p>
+            </div>
+            <div class="flex flex-col items-center pb-5 md:flex-row lg:flex-row lg:px-48">
+                <button class="bg-blue-400 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded-full"><a class="
+                    hover:underline" target="_blank" href="google.com">
+                        PATCH/quote/id/:id
+                    </a></button>
+                <p class="font-normal pl-4">Modify existing quote by ID</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="pt-10 pb-4 text-center bg-blue-100">
+        <p class="font-semibold">Built with love.</p>
+        <p>Copyright &copy; 2021 Zainabu Malabu </p>
+    </footer>
+    <script src="./js/main.js" async defer></script>
+    <script src="./js/smoothscroll.js"></script>
+</body>
+
+</html>
