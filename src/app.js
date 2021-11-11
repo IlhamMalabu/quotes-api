@@ -17,7 +17,7 @@ app.use(cors({
 
 
 
-app.use('', routes)
+app.use('/', routes)
 
 app.use((err, req, res, next) => {
     if (err) {
