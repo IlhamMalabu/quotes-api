@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 let path = require('path')
-const jquery = require('jquery')
 const routes = require('./routes')
 const port = process.env.PORT || 4000
 
