@@ -25,9 +25,6 @@
     "serve": "^13.0.2",
     "tailwindcss": "^2.2.19"
   },
-  "engines": {
-    "node": "14.17.3"
-  },
   "devDependencies": {
     "nodemon": "^2.0.14"
   }
