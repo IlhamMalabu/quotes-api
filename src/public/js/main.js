@@ -5,8 +5,6 @@ function getRandom() {
         .then((response) => response.json())
         .then((data) => {
             document.getElementById("quote").innerHTML = data.quote
-        })
-        .then((data) => {
             document.getElementById("person").innerHTML = data.person
         })
         .catch((err) => console.log(err))
