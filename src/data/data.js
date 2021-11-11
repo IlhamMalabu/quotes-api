@@ -8,7 +8,7 @@ module.exports = [
     },
     {
         "id": 2,
-        "lyric": "you've made even the me, who didn't believe in the existence of a god, believe that there's a god. to me, the goddess is you",
+        "quote": "you've made even the me, who didn't believe in the existence of a god, believe that there's a god. to me, the goddess is you",
         "person": "yoongi"
     }
 ]

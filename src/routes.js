@@ -46,7 +46,7 @@ router.get('/quotes/total', (req, res) => {
 router.get('/quotes/random', (req, res) => {
     const random = quotesDB[Math.floor(Math.random() * quotesDB.length)]
 
-    res.status(200).json({ quote: random.quote })
+    res.status(200).json({ quote })
 })
 
 // POST
