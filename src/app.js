@@ -4,6 +4,7 @@ const cors = require('cors')
 let path = require('path')
 const routes = require('./routes')
 const port = process.env.PORT || '4000'
+const host = '0.0.0.0'
 
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
@@ -26,4 +27,6 @@ app.use((err, req, res, next) => {
     }
 })
 
-app.listen(port)
+app.listen(port, host, () => {
+    console.log("server started on " + port)
+})
