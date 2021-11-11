@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "nodemon src/app.js",
     "dev": "nodemon src/app.js",
     "tailwind": "postcss src/public/styles/tailwind.css -o src/public/styles/style.css"
   },
@@ -23,6 +23,9 @@
     "express": "^4.17.1",
     "postcss-cli": "^9.0.2",
     "tailwindcss": "^2.2.19"
+  },
+  "engines": {
+    "node": "14.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"
