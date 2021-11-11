@@ -6,7 +6,6 @@ function getRandom() {
         .then((data) => {
             document.getElementById("quote").innerHTML = data.quote
             document.getElementById("person").innerHTML = data.person
-            getInfo(data.quote)
         })
         .catch((err) => console.log(err))
 }
