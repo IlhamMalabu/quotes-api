@@ -10,13 +10,19 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(express.static(path.join(__dirname, './public')))
 
-app.use(cors({
+// app.use(cors({
     
-    origin: "*",
-    allowedHeaders: 'Origin,X-Requested-With, Content-Type, Accept',
+//     origin: "*",
+//     allowedHeaders: 'Origin,X-Requested-With, Content-Type, Accept',
 
-}))
+// }))
+const corsOptions = {
+  origin: '*', // Allow all origins
+  methods: ['GET', 'POST', 'PATCH'], // Define allowed HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Add specific headers
+};
 
+app.use(cors(corsOptions));
 
 
 
