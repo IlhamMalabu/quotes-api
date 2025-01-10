@@ -1,7 +1,7 @@
 const { response } = require("express");
 
 function getRandom() {
-    fetch("https://motivational-quote-api.herokuapp.com/quotes/random")
+    fetch("https://motivational-quotes-api.onrender.com/quotes/random")
         .then((response) => response.json())
         .then((data) => {
             document.getElementById("quote").innerHTML = data.quote
