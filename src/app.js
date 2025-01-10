@@ -11,8 +11,11 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, './public')))
 
 app.use(cors({
+    
     origin: "*",
-    allowedHeaders: 'Origin,X-Requested-With, Content-Type, Accept'
+    allowedHeaders: 'Origin,X-Requested-With, Content-Type, Accept',
+    Access-Control-Allow-Origin: *
+
 }))
 
 
