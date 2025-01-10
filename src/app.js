@@ -14,7 +14,6 @@ app.use(cors({
     
     origin: "*",
     allowedHeaders: 'Origin,X-Requested-With, Content-Type, Accept',
-    Access-Control-Allow-Origin: *
 
 }))
 
