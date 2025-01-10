@@ -1,6 +1,14 @@
 const router = require('express').Router()
 let quotesDB = require('./data/data')
 
+const corsOptions = {
+  origin: '*', // Allow all origins
+  methods: ['GET', 'POST', 'PATCH'], // Define allowed HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Add specific headers
+};
+
+app.use(cors(corsOptions));
+
 // GET
 
 // ALL QUOTES
